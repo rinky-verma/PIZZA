@@ -1,0 +1,246 @@
+
+  *{  margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 33%;
+    top: 24%;
+    border-radius: 50%;
+    background-color: rgba(7, 6, 6, 0.116);
+    border-top: .2px solid #333;
+    border-bottom: .2px solid #333;
+    border-left: .2px solid #333;
+    border-right: .2px solid #333;
+}
+#circle:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+    cursor: pointer;
+}
+
+#left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: cadetblue;
+}
+#linediv{
+    position: absolute;
+    width: 2%;
+    height: 100%;
+    left: 14%;
+    background-color: rgba(0, 0, 0, 0.096);
+    border-left: .2px solid rgba(255, 255, 255, 0.938);
+    border-right: .2px solid rgba(255, 255, 255, 0.904);
+    z-index: 10;
+}
+#left #text{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-family: compacta std;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+#left h3{
+    position: absolute;
+    left: 10%;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+#left h4{
+    position: absolute;
+    left: 65%;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+#left h3:hover{
+    color: #fff;
+    cursor: pointer;
+}
+#left h4:hover{
+    color: #fff;
+    cursor: pointer;
+}
+#text:hover{
+    color: #fff;
+    -webkit-text-stroke: .2px rgb(12, 8, 8);
+}
+
+#linediv:hover{
+    background-color: rgba(255, 255, 255, 0.13);
+    cursor: pointer;
+}
+#linediv2{
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    top: 19%;
+    background-color: rgba(14, 2, 2, 0.082);
+    z-index: 1;
+}
+#linediv2:hover{
+    background-color: rgba(255, 255, 255, 0.13);
+    cursor: pointer;
+}
+#linediv2 h1{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 3%;
+    letter-spacing: 15px;
+    top: 50%;
+    transform: translate(0%,-50%);
+    font-weight:900;
+    border-top: .2px solid #fff;
+    border-bottom: .2px solid #fff;
+}
+#linediv2 h1:hover{
+    color: black;
+    cursor: pointer;
+}
+#linediv #text1{
+    position: absolute;
+    bottom:3%;
+    letter-spacing: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+#linediv #text1:hover{
+    color: black;
+    cursor: pointer;
+}
+#center{
+    position: relative;
+    width:25%;
+    height: 100%;
+    background-color: rgb(161, 158, 147);
+}
+#center #box{
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%,0%);
+    width: 150px;
+    height: 50px;
+    background-color: rgba(5, 7, 7, 0.089);
+    border-top: .3px solid #333;
+    border-bottom: .3px solid #333;
+    border-left: .3px solid #333;
+    border-right: .3px solid #333;
+    z-index: 5;
+
+}
+#center #box:hover{
+    background-color: rgba(0, 0, 0, 0.226);
+    cursor: pointer;
+}
+#box h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 5px;
+}
+#box h1:hover{
+    color: rgb(250, 250, 243);
+    cursor: pointer;
+}
+#ctp{
+    position: relative;
+    width: 100%;
+    height: 19%;
+    background-color: #333;
+}
+#ctp h1{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+#ctp:hover{
+    background-color: rgb(3, 65, 18);
+    cursor: pointer;
+}
+#ctp h1:hover{
+    color: black;
+    cursor: pointer;
+}
+#center #one{
+    position: absolute;
+    top: 83%;
+    font-family: compacta std;
+    letter-spacing: 10px;
+    font-size: 55px;
+}
+#center #one:hover{
+    color: #fff;
+    -webkit-text-stroke: .2px #333;
+    cursor: pointer;
+}
+#center #two:hover{
+    color: #fff;
+    -webkit-text-stroke: .2px #333;
+    cursor: pointer;
+}
+#center #two{
+    position: absolute;
+    top: 90%;
+    font-family: compacta std;
+    letter-spacing: 10px;
+    font-size: 55px;
+    right: 5%;
+
+}
+#right{
+    width: 25%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1473973916745-60839aebf06b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZWxlZ2FudCUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+#left #rect{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1516600164266-f3b8166ae679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-position: center;
+    background-size: cover;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+#center #para{
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    font-size: 10px;
+}
+#circle h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: 5px;
+    letter-spacing: 10px;
+}
+#circle h3:hover{
+    color: #fff;
+}
